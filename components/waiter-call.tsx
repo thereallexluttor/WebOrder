@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Bell, X, CheckCircle, User } from "lucide-react"
+import { Bell, X, CheckCircle, User, ChefHat } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -46,7 +46,7 @@ export function WaiterCall({ tableNumber, onClose }: WaiterCallProps) {
       <Card className="w-full max-w-md">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
           <CardTitle className="text-lg font-semibold flex items-center gap-2">
-            <Bell className="w-5 h-5 text-orange-500" />
+            <Bell className="w-5 h-5 text-[#18494E]" />
             Llamar al Camarero
           </CardTitle>
           <Button variant="ghost" size="sm" onClick={handleClose}>
@@ -79,7 +79,7 @@ export function WaiterCall({ tableNumber, onClose }: WaiterCallProps) {
               <Button
                 onClick={handleCallWaiter}
                 disabled={isCalling}
-                className="w-full bg-orange-500 hover:bg-orange-600"
+                className="w-full bg-[#18494E] hover:bg-[#18494E]/90"
                 size="lg"
               >
                 <Bell className="w-5 h-5 mr-2" />
@@ -118,10 +118,10 @@ export function FloatingWaiterButton({ onClick, tableNumber }: FloatingWaiterBut
     <div className="fixed bottom-6 right-6 z-40">
       <Button
         onClick={onClick}
-        className="w-16 h-16 rounded-full bg-orange-500 hover:bg-orange-600 shadow-lg border-0 p-0 flex items-center justify-center"
+        className="w-12 h-12 rounded-full bg-[#18494E] hover:bg-[#18494E]/90 shadow-lg border-0 p-0 flex items-center justify-center"
         size="lg"
       >
-        <Bell className="w-7 h-7 text-white" />
+        <Bell className="w-6 h-6 text-white" />
       </Button>
       {tableNumber && (
         <div className="absolute -top-2 -right-2">

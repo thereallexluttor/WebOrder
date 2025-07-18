@@ -33,7 +33,7 @@ function PageContent() {
     return (
       <div className="min-h-screen">
         <div className="bg-green-600 text-white px-4 py-2 text-center text-sm">
-          ✓ Conectado desde {currentTable} - Bella Vista Restaurant
+          ✓ Conectado desde {currentTable}
         </div>
         <SplashScreen onEnterMenu={handleEnterMenu} />
       </div>
@@ -44,7 +44,7 @@ function PageContent() {
   return (
     <div className="min-h-screen">
       <div className="bg-green-600 text-white px-4 py-2 text-center text-sm">
-        ✓ Conectado desde {currentTable} - Bella Vista Restaurant
+        ✓ Conectado desde {currentTable}
       </div>
       <MenuApp />
     </div>

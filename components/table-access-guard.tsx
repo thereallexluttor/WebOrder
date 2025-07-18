@@ -50,10 +50,10 @@ export function TableAccessGuard({ children, onAccessGranted }: TableAccessGuard
   // Show loading state
   if (accessState === 'checking') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-[#18494E] via-[#2a5f5f] to-[#1a3e3e] flex items-center justify-center p-4 font-[Helvetica Neue]">
         <div className="text-center">
           <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-2xl">
-            <Shield className="w-12 h-12 text-orange-500 animate-pulse" />
+            <Shield className="w-12 h-12 text-[#18494E] animate-pulse" />
           </div>
           <h1 className="text-3xl font-bold text-white mb-2">Validando acceso...</h1>
           <div className="flex justify-center mb-4">
@@ -67,7 +67,7 @@ export function TableAccessGuard({ children, onAccessGranted }: TableAccessGuard
   // Show access denied
   if (accessState === 'denied') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-red-600 via-red-700 to-red-800 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-red-600 via-red-700 to-red-800 flex items-center justify-center p-4 font-[Helvetica Neue]">
         <Card className="bg-white/10 backdrop-blur-sm border-white/20 max-w-md w-full">
           <CardContent className="p-6 text-center">
             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
@@ -80,7 +80,7 @@ export function TableAccessGuard({ children, onAccessGranted }: TableAccessGuard
             <div className="bg-white/10 rounded-lg p-4 mb-4">
               <div className="flex items-center justify-center mb-2">
                 <ChefHat className="w-6 h-6 text-white mr-2" />
-                <span className="text-white font-semibold">Bella Vista</span>
+                <span className="text-white font-semibold">La Tropicana</span>
               </div>
               <p className="text-white/70 text-xs">
                 Para acceder al menú digital, escanea el código QR de tu mesa en el restaurante.
@@ -104,7 +104,7 @@ export function TableAccessGuard({ children, onAccessGranted }: TableAccessGuard
     <div>
       {/* Table info header */}
       <div className="bg-green-600 text-white px-4 py-2 text-center text-sm">
-        ✓ Conectado desde {tableId} - Bella Vista Restaurant
+        ✓ Conectado desde {tableId}
       </div>
       {children}
     </div>
